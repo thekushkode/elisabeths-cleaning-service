@@ -82,8 +82,8 @@
                   <h4 class="m-auto pt-2 pb-3 font-weight-bold black-text">Experience a healthier, cleaner home.
                   </h4>
                 </div>
-                <a class="btn btn-cyan btn-rounded text-uppercase wow fadeInUpm mt-2" data-wow-delay=".2s" href="#tour"
-                  data-offset="100">
+                <a class="btn btn-cyan btn-rounded text-uppercase wow fadeInUpm mt-2" data-wow-delay=".2s"
+                  href="#contact" data-offset="100">
                   <i class="far fa-calendar-alt mr-2"></i>
                   <span>Book A Cleaning</span>
                 </a>
@@ -174,16 +174,16 @@
                       <!-- Grid column -->
                       <div class="col-md-6">
                         <div class="md-form">
-                          <input type="text" id="form41" class="form-control text-black">
-                          <label for="form41" name="name">Your name</label>
+                          <input type="text" id="form41" name="name" class="form-control text-black">
+                          <label for="form41">Your name</label>
                         </div>
                       </div>
 
                       <!-- Grid column -->
                       <div class="col-md-6">
                         <div class="md-form">
-                          <input type="text" id="form52" class="form-control text-black">
-                          <label for="form52" name="email">Your email</label>
+                          <input type="text" id="form52" name="email" class="form-control text-black">
+                          <label for="form52">Your email</label>
                         </div>
                       </div>
                     </div>
@@ -193,10 +193,11 @@
                     <div class="row">
                       <div class="col-md-12">
                         <div class="md-form">
-                          <input type="text" id="form51" class="form-control text-black">
-                          <label for="form51" name="subject">Subject</label>
+                          <input type="text" id="form51" name="subject" class="form-control text-black">
+                          <label for="form51">Subject</label>
                         </div>
                       </div>
+
                     </div>
                     <!-- Second row -->
 
@@ -206,9 +207,9 @@
                       <div class="col-md-12">
 
                         <div class="md-form">
-                          <textarea type="text" id="form76" class="md-textarea form-control text-black"
-                            rows="3"></textarea>
-                          <label for="form76" name="message">Your message</label>
+                          <textarea type="text" id="form76" name="message" class="md-textarea form-control text-black"
+                            rows="1"></textarea>
+                          <label for="form76">Your message</label>
                         </div>
 
                       </div>
@@ -233,7 +234,7 @@
 
                     <li><i class="fas fa-phone cyan-text fa-2x"></i>
                       <div class="cyan-text">
-                        <p>INSERT PHONE</p>
+                        <p>678.508.4924</p>
                       </div>
                     </li>
 
@@ -323,6 +324,9 @@
     $(function () {
       $("#mdb-lightbox-ui").load("../mdb-addons/mdb-lightbox-ui.html");
     });
+
+    // Data Picker Initialization
+    $('.datepicker').datepicker();
 
   </script>
 
