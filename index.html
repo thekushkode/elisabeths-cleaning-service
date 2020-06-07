@@ -2,13 +2,28 @@
 <html lang="en">
 
 <head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-168771606-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-168771606-1');
+  </script>
+
   <meta
     keywords="atlanta cleaning service, smyrna cleaning service, vinings cleaning service, cleaning service near me, home cleaning, organic home cleaning, clean my house">
   <meta
-    description="Elisabeth's Cleaning Service is the premier home cleaning service in the Atlanta, Vinings, and Smyrna areas. Get a quote today!">
+    description="Elisabeth's Cleaning is the best, most affordable home cleaning service in the Atlanta, Vinings, and Smyrna areas. Get a quote today!">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta property="og:title" content="Elisabeth's Cleaning">
+  <meta property="og:description"
+    content="Elisabeth's Cleaning is the best, most affordable home cleaning service in the Atlanta, Vinings, and Smyrna areas. Get a quote today!">
+  <meta property="og:image" content="/images/ec_home.jpg">
+  <meta property="og:url" content="https://www.elisabethscleaning.com">
   <title>Elisabeth's Cleaning Service</title>
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
@@ -77,7 +92,7 @@
             <div class="col-md-12">
               <div class="text-center">
                 <div class="wow fadeInDown" data-wow-delay=".2s">
-                  <h1 class="font-weight-bold display-3 mb-0 black-text">Elisabeth's Cleaning Service</h1>
+                  <h1 class="font-weight-bold display-3 mb-0 black-text">Elisabeth's Cleaning</h1>
                   <hr class="hr-light my-3 clearfix d-none d-md-block">
                   <h4 class="m-auto pt-2 pb-3 font-weight-bold black-text">Experience a healthier, cleaner home.
                   </h4>
@@ -129,12 +144,12 @@
 
             <!-- Description -->
             <p align="justify" class="grey-text-3">Hi- I'm Elisabeth! I have been serving residences in the Atlanta,
-              Vinings, and Smyrna communities for years! <br><br>Rem magnam ad perferendis iusto sint tempora ea
-              voluptatibus iure, animi excepturi modi aut possimus in hic molestias repellendus illo ullam odit quia
-              velit. Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br><br>Incidunt eligendi mollitia labore
-              ipsum ex fugit explicabo saepe error neque beatae in, expedita eveniet quae aliquam assumenda
-              voluptatibus! Iure dolorum, itaque. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta
-              expedita, maiores omnis culpa voluptatem ipsum eius.</p>
+              Vinings, and Smyrna communities for years and I'd love the opportunity to add you to my list of happy
+              customers! <br><br>Our services range from floors of all types, to windows & bathroooms, and everything in
+              between! Elisabeth's Cleaning is also a great, hassle free way to get the house ready when you're
+              expecting company.<br><br>To get started, <a href="#contact">contact us</a>&nbsp;below to schedule a
+              quote! We looking forward to meeting you and creating a clean, healty enviroment for you and your family!
+            </p>
 
           </div>
           <!-- Grid column -->
@@ -144,6 +159,8 @@
 
       </section>
       <!-- Section: About -->
+
+      <hr class="mb-5">
 
       <!-- Contact form -->
       <div>
@@ -184,6 +201,26 @@
                         <div class="md-form">
                           <input type="text" id="form52" name="email" class="form-control text-black">
                           <label for="form52">Your email</label>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Grid row -->
+
+                    <!-- Grid row -->
+                    <div class="row">
+                      <!-- Grid column -->
+                      <div class="col-md-6">
+                        <div class="md-form">
+                          <input type="text" id="form41" name="phone" class="form-control text-black">
+                          <label for="form41">Phone</label>
+                        </div>
+                      </div>
+
+                      <!-- Grid column -->
+                      <div class="col-md-6">
+                        <div class="md-form">
+                          <input type="text" id="date-picker-example" class="form-control datepicker">
+                          <label for="date-picker-example">Select Service Date...</label>
                         </div>
                       </div>
                     </div>
@@ -275,16 +312,10 @@
           <div class="footer-socials mt-1 mb-2">
 
             <!-- Facebook -->
-            <a type="button" class="btn-floating btn-cyan"><i class="fab fa-facebook-f"></i></a>
+            <a type="button" class="btn-floating btn-cyan" href="phone:6785084924"><i class="fas fa-phone"></i></a>
             <!-- Twitter -->
-            <a type="button" class="btn-floating btn-cyan"><i class="fab fa-twitter"></i></a>
-            <!-- Google + -->
-            <a type="button" class="btn-floating btn-cyan"><i class="fab fa-google-plus-g"></i></a>
-            <!-- Youtube -->
-            <a type="button" class="btn-floating  btn-cyan"><i class="fab  fa-youtube"></i></a>
-            <!-- Instagram -->
-            <a type="button" class="btn-floating  btn-cyan"><i class="fab fa-instagram"></i></a>
-
+            <a type="button" class="btn-floating btn-cyan" href="mailto:bethdelima@live.com"><i
+                class="fas fa-envelope"></i></a>
           </div>
         </div>
         <!-- Grid column -->
@@ -326,7 +357,8 @@
     });
 
     // Data Picker Initialization
-    $('.datepicker').datepicker();
+    //$('.datepicker').datepicker();
+    $('.datepicker').pickadate();
 
   </script>
 
