@@ -185,7 +185,7 @@
 
                 <!-- Grid column -->
                 <div class="col-md-8">
-                  <form name="contact" id="contactForm" data-netlify="true">
+                  <form name="contact" id="contact-form" data-netlify="true">
                     <!-- Grid row -->
                     <div class="row">
                       <!-- Grid column -->
@@ -256,7 +256,7 @@
                   </form>
 
                   <div class="text-center text-md-left mt-4 mb-4">
-                    <a id="youLinkId" class="btn btn-pink-blue btn-rounded cyan-text"></i>send</a>
+                    <a class="btn btn-pink-blue btn-rounded cyan-text" onclick="document.getElementById('contact-form').submit();"></i>send</a>
                   </div>
                 </div>
                 <!-- Grid column -->
@@ -358,13 +358,8 @@
     });
 
     // Data Picker Initialization
-    //$('.datepicker').datepicker();
     $('.datepicker').pickadate();
 
-    //form submit
-    document.getElementById("yourLinkId").onclick = function () {
-      document.getElementById("contactForm").submit();
-    }
 
   </script>
 
